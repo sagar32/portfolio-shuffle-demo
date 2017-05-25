@@ -1,0 +1,155 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	color: #1e1e1e;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+}
+
+h3 {
+	color: #1e1e1e;
+	font-size: 30px;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: 'Dancing Script', cursive;
+}
+
+p {
+	font-size: 14px;
+	line-height: 30px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+a,
+a:hover {
+	text-decoration: none !important;
+}
+
+a:focus {
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+::-webkit-input-placeholder {
+    opacity: 1 !important;
+}
+
+input::-moz-placeholder {
+    opacity: 1 !important;
+}
+
+input:-moz-placeholder {
+    opacity: 1 !important;
+}
+
+.section-padding {
+	padding: 25px 0;
+}
+
+.section-heading {
+	text-align: center;
+}
+
+.section-heading h2 {
+	font-size: 45px;
+	color: #2a1d22;
+	line-height: 38px;
+	margin: 0;
+	padding-bottom: 55px;
+}
+
+.section-heading p {
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 35px;
+	margin: 0 0 60px;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.gallery {
+	background-color: #fef0ee;
+	padding-bottom: 0;
+	overflow: hidden;
+}
+
+.gallery ul {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.gallery ul li {
+	display: inline-block;
+}
+
+.gallery ul li a {
+	display: block;
+	color: #1e1e1e;
+	padding: 12px;
+	border: 1px solid #ee8397;
+}
+
+.gallery ul li .active {
+	background-color: #df2349;
+	color: #fff;
+}
+
+.gallery #shuffle-wrapper .col {
+	padding: 0;
+	position: relative;
+	display: block;
+	visibility: visible;
+	box-sizing: border-box;
+}
+
+.gallery #shuffle-wrapper a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery #shuffle-wrapper .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: scale(0,0);
+	transform: scale(0,0);
+}
+
+.gallery #shuffle-wrapper .col:hover .overlay {
+	visibility: visible;
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+	z-index: 5;
+}
+
+.gallery #shuffle-wrapper .col img {
+	width: 100%;
+	display: block;
+	-webkit-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.gallery #shuffle-wrapper .col:hover img {
+	-webkit-transform: scale(1.3,1.3);
+	transform: scale(1.3,1.3);
+}
